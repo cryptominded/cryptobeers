@@ -15,7 +15,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Organised by", name: "organiser", widget: "string"}
       - {label: "Meetup Group", name: "meetup-group", widget: "string"}
 
-collections: # A list of collections the CMS should be able to edit
   - name: "events" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Event" # Used in the UI, ie.: "New Post"
     folder: "source/events" # The path to the folder where the documents are stored
