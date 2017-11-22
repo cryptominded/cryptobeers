@@ -47,3 +47,32 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
+
+# set :markdown_engine, :redcarpet
+# set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+activate :blog do |blog|
+  # blog.name = "events"
+  blog.prefix = "events"
+  # blog.permalink = "events/{title}.html"
+  blog.sources = "{title}.html"
+  blog.default_extension = ".md"
+  # blog.custom_collections = {
+  #   category: {
+  #     link: '/cities/{city}.html',
+  #     template: '/cities.html'
+  #   }
+  # }
+end
+
+# activate :blog do |blog|
+#   blog.sources = "cities/{title}.html"
+#   blog.sources = "events/{title}.html"
+#   blog.permalink = "events/{title}.html"
+#   blog.custom_collections = {
+#     category: {
+#       link: '/cities/{city}.html',
+#       template: '/city.html'
+#     }
+#   }
+# end

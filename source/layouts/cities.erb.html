@@ -105,13 +105,6 @@
   </head>
   <body>
     
-     <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <h1><%= article.title %></h1>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-
     <%= yield %>
     
     <%= partial 'partials/footer' %>
