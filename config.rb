@@ -52,7 +52,7 @@ end
 # set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :blog do |blog|
-  # blog.name = "events"
+  blog.name = "events"
   blog.prefix = "events"
   # blog.permalink = "events/{title}.html"
   blog.sources = "{title}.html"
