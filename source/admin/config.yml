@@ -9,9 +9,10 @@ collections: # A list of collections the CMS should be able to edit
   - name: "cities" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "City" # Used in the UI, ie.: "New Post"
     folder: "source/cities" # The path to the folder where the documents are stored
+    slug: {{slug}}
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Name", name: "name", widget: "string", tagname: "h1"}
+      - {label: "Name", name: "title", widget: "string", tagname: "h1"}
       - {label: "Organised by", name: "organiser", widget: "string"}
       - {label: "Meetup Group", name: "meetup-group", widget: "string"}
 
