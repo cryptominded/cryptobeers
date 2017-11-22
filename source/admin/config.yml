@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Meetup Link", name: "meetup-link", widget: "string"}
       - name: "City"
         label: "city"
-        widget: "relations"
+        widget: "relation"
         collection: "cities"
         searchFields: [title, organiser, meetup-group]
         valueField: "title"
