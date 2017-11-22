@@ -31,5 +31,5 @@ collections: # A list of collections the CMS should be able to edit
         label: city
         widget: relations
         collection: cities
-        searchFields: [name, organiser, meetup-group]
-        valueField: name
+        searchFields: [title, organiser, meetup-group]
+        valueField: title
