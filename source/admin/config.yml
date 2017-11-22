@@ -27,9 +27,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Made possible by", name: "possible-by", widget: "string"}
       - {label: "Meetup Link", name: "meetup-link", widget: "string"}
-      - name: City
-        label: city
-        widget: relations
-        collection: cities
+      - name: "City"
+        label: "city"
+        widget: "relations"
+        collection: "cities"
         searchFields: [title, organiser, meetup-group]
-        valueField: title
+        valueField: "title"
