@@ -1,5 +1,6 @@
 ---
 title: Cryptobeers in San Francisco
+image: /img/uploads/StockSnap_ZXWXE8FAJN.jpg
 location: SoMa Eats
 date: 2017-11-25T00:21:21.100Z
 possible_by: Bitcoin for Beginners
@@ -12,3 +13,4 @@ description: >-
   from Bitcoin for Beginners.
 ---
 Join us in San Francisco for the next cryptobeers event at SoMA Eats. Organised by Kevin Ting from Bitcoin for Beginners.
+
