@@ -141,11 +141,16 @@ Styleguide 1.2
 .wrapper-large{
   margin: 0 auto;
   max-width: 1200px;
-  padding: 7.2rem 2rem;
+  padding: 4.2rem 2rem;
 }
 
 .wrapper-small{
   margin: 0 auto;
   max-width: 640px;
   padding: 2.4rem 2rem;
+}
+
+.wrapper-nopadding{
+  margin: 0 auto;
+  max-width: 1200px;
 }

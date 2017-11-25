@@ -114,3 +114,72 @@ Styleguide 4.1
 .fw-bold{
   font-weight: 700;
 }
+
+
+/*
+
+Padding Utilities
+
+These are utilities to provide easy padding
+
+Markup:
+<div class="pad_small-top {{modifier_class}}">
+  The quick brown fox jumps over the lazy dog.
+</div>
+
+Styleguide 4.1
+
+*/
+
+.pad {
+
+  &_small-top {
+    padding-top: 15px;
+  }
+
+  &_medium-top {
+    padding-top: 30px;
+  }
+
+  &_large-top {
+    padding-top: 50px;
+  }
+
+  &_small-bottom {
+    padding-top: 15px;
+  }
+
+  &_medium-bottom {
+    padding-top: 30px;
+  }
+
+  &_large-bottom {
+    padding-bottom: 50px;
+  }
+
+  &_small-topbot {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+}
+
+.mar {
+  &_small-right {
+    margin-right: 15px;
+  }
+
+  &_small-bottom {
+    margin-bottom: 15px;
+  }
+  
+  &_medium-bottom {
+    margin-bottom: 30px;
+  }
+  
+  &_large-bottom {
+    margin-bottom: 50px;
+  }
+}
+
+

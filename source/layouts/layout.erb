@@ -97,20 +97,14 @@
     <%= javascript_include_tag "site" %>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:300,400,500,600,700" rel="stylesheet">
 
     <!-- ADMIN LOGIN -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </head>
   <body>
-    
-     <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <h1><%= article.title %></h1>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
+    <%= partial 'partials/navbar' %>
 
     <%= yield %>
     
