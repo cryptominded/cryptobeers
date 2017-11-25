@@ -80,7 +80,7 @@ header {
 		-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.15);
 		box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.15);
 		transition-property: box-shadow;
-		transition-duration: 200ms;
+		transition-duration: 300ms;
 
 		&:hover {
 			-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.15);
@@ -135,7 +135,7 @@ header {
 			.date { color: $gray3; font-weight: 300; }
 			.city { color: $gray3; font-weight: 300; }
 
-			h4 { padding-bottom: 15px; padding-top: 0; color: $gray1; font-weight: 600; }
+			h4 { padding-bottom: 15px; padding-top: 10px; color: $gray1; font-weight: 600; }
 			a { text-decoration: none; }
 
 			p { 
