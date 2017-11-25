@@ -1,13 +1,14 @@
 ---
 title: Cryptobeers in San Francisco
-description: >-
-  Come to our cryptobeers event in San Francisco, made possible by Kevin Ting
-  from Bitcoin for Beginners.
 location: SoMa Eats
 date: 2017-11-25T00:21:21.100Z
 possible_by: Bitcoin for Beginners
+organised_by: Kevin Ting
 meetup-link: >-
   https://www.meetup.com/The-Cryptominded-Meetup-London-Edition/events/244863174/
-City: San Francisco, USA
+City: 'San Francisco, USA'
+description: >-
+  Come to our cryptobeers event in San Francisco, made possible by Kevin Ting
+  from Bitcoin for Beginners.
 ---
-
+Join us in San Francisco for the next cryptobeers event at SoMA Eats. Organised by Kevin Ting from Bitcoin for Beginners.
