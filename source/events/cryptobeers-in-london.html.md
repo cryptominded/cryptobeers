@@ -2,7 +2,7 @@
 title: CryptoBeers in London
 image: /images/heidi-sandstrom-187259.jpg
 location: To be confirmed
-date: 2017-11-28T22:08:01.101Z
+date: 12/14/2017 6:30 PM
 possible_by: Cryptominded
 organised_by: Barry Leybovich
 meetup-link: >-
@@ -10,3 +10,4 @@ meetup-link: >-
 City: 'London, UK'
 ---
 Whether you're a seasoned crypto-expert or just a beginner, come and have a chat with like-minded enthusiasts and meet some of the Cryptominded team as well!
+
