@@ -5,30 +5,35 @@ title: Cryptobeers -- by Cryptominded
 <%= partial 'partials/home-hero' %>
 
 <div class="wrapper-large">
-	
-	<div class="ta-center">
-		<h3 class="fw-semibold">Upcoming events</h3>
-	</div>
 
-	<div class="events">
+  <div class="ta-center">
+    <h3 class="fw-semibold">Upcoming events</h3>
+  </div>
 
-		<% page_articles.each_with_index do |article| %>
-				<div class="events__card">
-					<div class="image">
-						<a href="<%= article.data.meetup_link %>">
-							<img src="<%= article.data.image %>" width="320" height="220">
-							<div class="overlay"><button class="btn--secondary">RSVP</button></div>
-						</a>
-					</div>
-					<div class="details">
-						<span class="date"><%= article.date.strftime('%A, %e %B %Y') %></span> • <span class="city"><%= article.data.City %></span>
-						<a href="<%= article.data.meetup_link %>"><h4><%= article.title %></h4></a>
-						<%= article.body %>
-						<span><strong>Organised by:</strong> <%= article.data.organised_by %></span>
-					</div>
-				</div>
-		<% end %>
-		
-	</div>
+  <div class="events">
+    <% group_by_month(page_articles.reverse).each do |month, articles| %>
+
+      <%= month %>
+
+      <% articles.each do |article| %>
+
+        <div class="events__card">
+	  <div class="image">
+	    <a href="<%= article.data.meetup_link %>">
+	      <img src="<%= article.data.image %>" width="320" height="220">
+	      <div class="overlay"><button class="btn--secondary">RSVP</button></div>
+	    </a>
+	  </div>
+	  <div class="details">
+	    <span class="date"><%= article.date.strftime('%A, %e %B %Y') %></span> • <span class="city"><%= article.data.City %></span>
+	    <a href="<%= article.data.meetup_link %>"><h4><%= article.title %></h4></a>
+	    <%= article.body %>
+	    <span><strong>Organised by:</strong> <%= article.data.organised_by %></span>
+	  </div>
+        </div>
+
+      <% end %>
+    <% end %>
+  </div>
 
 </div>
