@@ -144,6 +144,18 @@ header {
 			}
 
 		}
+
+		.organisor {
+			color: $gray3;
+		}
+		.sponsor {
+			color: $gray3;
+			margin-left: 35px;
+		}
+	}
+
+	.months:first-child {
+		display: none;
 	}
 
 }
