@@ -11,3 +11,4 @@ City: 'London, UK'
 ---
 Whether you're a seasoned crypto-expert or just a beginner, come and have a chat with like-minded enthusiasts and meet some of the Cryptominded team as well!
 
+
