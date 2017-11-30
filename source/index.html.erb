@@ -11,26 +11,26 @@ title: Cryptobeers -- by Cryptominded
   </div>
 
   <div class="events">
-    <% group_by_month(data.events).each do |month, articles| %>
+    <% group_by_month(data.events).each do |month, events| %>
 
       <div class="ta-center months">
-    	<h4 class="fw-semibold"><%= month %></h4>
+        <h4 class="fw-semibold"><%= month %></h4>
       </div>
 
-      <% articles.each do |article| %>
+      <% events.each do |event| %>
         <div class="events__card">
-	  <div class="image">
-	    <a href="<%= article.meetup_link %>">
-	      <img src="<%= article.image %>" width="320" height="220">
-	      <div class="overlay"><button class="btn--secondary">RSVP</button></div>
-	    </a>
-	  </div>
-	  <div class="details">
-	    <span class="date"><%= article.strftime('%A, %e %B %Y') %></span> • <span class="city"><%= article.City %></span>
-	    <a href="<%= article.meetup_link %>"><h4><%= article.title %></h4></a>
-	    <%= article.body %>
-	    <span class="organisor"><strong>Organised by:</strong> <%= article.organised_by %></span>
-	    <span class="sponsor"><strong>Made possible by:</strong> <%= article.possible_by %></span>
+          <div class="image">
+            <a href="<%= event.meetup_link %>">
+              <img src="<%= event.image %>" width="320" height="220">
+              <div class="overlay"><button class="btn--secondary">RSVP</button></div>
+            </a>
+          </div>
+          <div class="details">
+            <span class="date"><%= event.date.strftime('%A, %e %B %Y') %></span> • <span class="city"><%= event.City %></span>
+            <a href="<%= event.meetup_link %>"><h4><%= event.title %></h4></a>
+            <div><%= event.postscript %></div>
+            <span class="organisor"><strong>Organised by:</strong> <%= event.organised_by %></span>
+            <span class="sponsor"><strong>Made possible by:</strong> <%= event.possible_by %></span>
 	  </div>
         </div>
 
