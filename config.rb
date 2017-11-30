@@ -57,7 +57,7 @@ activate :blog do |blog|
   blog.name = "events"
   blog.prefix = "events"
   # blog.permalink = "{title}.html"
-  blog.sources = "{title}"
+  blog.sources = "{title}.html.md"
   blog.default_extension = ".md"
   blog.custom_collections = {
     category: {
