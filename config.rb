@@ -1,5 +1,6 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+ENV['TZ'] = 'UTC'
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -35,9 +36,9 @@ activate :livereload
 # https://middlemanapp.com/basics/helper-methods/
 
 helpers do
-  def group_by_month(articles)
-    articles.group_by do |article|
-      article.data.date.strftime('%B %Y')
+  def group_by_month(collection)
+    collection.values.sort_by { |item| item.date }.group_by do |item|
+      item.date.strftime('%B %Y')
     end
   end
 end
